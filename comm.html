@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <script src="script.js"></script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, 
                    initial-scale=1.0">
@@ -16,7 +16,15 @@
     <div class="navbar">
         <div class="menu-1">
             <div id="hamburger">
-                <button class="hambtn",id="hambtn"><img src="hamburger.png" /></button>
+                <button class="hambtn",id="hambtn">
+                    <!-- <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span> -->
+                    <!-- <img src="hamburger.png" /> -->
+                    
+                    <img class="menuIcon" src="hamburger.png" />
+                    
+                </button>
             </div>
             <div id="logo">
                 <a href="#"><img style="padding:15px" src="thumbs.png" /></a href>
@@ -57,15 +65,16 @@
 
     <div class="hamburger-menu",id="hamburger-menu">
         <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Chat</a></li>
-            <li><button>Communities</button></li>
-            <li><button> Custom feed</button></li>
+           
+            <li><a class="menuItem" href="#">Home</a></li>
+            <li><a class="menuItem" href="#">Profile</a></li>
+            <li><a class="menuItem" href="#">Chat</a></li>
+            <li><button class="menuItem">Communities</button></li>
+            <li><button class="menuItem"> Custom feed</button></li>
 
         </ul>
     </div>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

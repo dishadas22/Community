@@ -7,7 +7,16 @@
 
 
 }
-
+/* .hambtn{
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+   
+    padding: 4px;
+    border: black solid 1px;
+    background: white;
+    cursor: pointer;
+} */
 .menu-1 {
 
     display: flex;
@@ -60,11 +69,14 @@ img {
     border-width: 1px;
     font-size: 20px;
 }
-
+.closeIcon {
+    display: none;
+  }
 .hamburger-menu {
     top: 0;
-    display:flex;
-    
+    transform: translateY(-100%);
+  transition: transform 0.2s;
+    position: absolute;
 
     border-right: #222;
     width: 30vh;
@@ -72,7 +84,14 @@ img {
     background-color: blanchedalmond;
 
 }
-
+.showMenu {
+    transform: translateY(0);
+  }
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+  }
 .hamburger-menu li {
     list-style: none;
 }
